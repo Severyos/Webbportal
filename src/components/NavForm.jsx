@@ -6,12 +6,12 @@ const NavForm = () => {
     <>
       <header>
         <nav className="navbar">
-          <span className="hamburger-btn material-symbols-rounded">menu</span>
+          <span className="hamburger-btn material-symbols-rounded">Menu</span>
           <a href="#" className="logo">
             <img src={logo} alt="logo" />
           </a>
           <ul className="links">
-            <span className="close-btn material-symbols-rounded">close</span>
+            <span className="close-btn material-symbols-rounded">Stäng</span>
             <li><a href="#">Företag</a></li>
             <li><a href="#">Aktiviteter</a></li>
             <li><a href="#">Affärsmöjligheter</a></li>
@@ -19,66 +19,66 @@ const NavForm = () => {
             <li><a href="#">Dokument</a></li>
             <li><a href="#">Kalender</a></li>
           </ul>
-          <button className="login-btn">LOG IN</button>
+          <button className="login-btn">LOGGA IN</button>
         </nav>
       </header>
 
       <div className="blur-bg-overlay"></div>
       <div className="form-popup">
-        <span className="close-btn material-symbols-rounded">close</span>
+        <span className="close-btn material-symbols-rounded">Stäng</span>
         <div className="form-box login">
           <div className="form-details">
-            <h2>Welcome Back</h2>
-            <p>Please log in using your personal information to stay connected with us.</p>
+            <h2>Välkommen tillbaka!</h2>
+            <p>Logga in med din personliga information för att hålla kontakten med oss.</p>
           </div>
           <div className="form-content">
-            <h2>LOGIN</h2>
+            <h2>LOGGA IN</h2>
             <form action="#">
               <div className="input-field">
                 <input type="text" required />
-                <label>Email</label>
+                <label>E-Post</label>
               </div>
               <div className="input-field">
                 <input type="password" required />
-                <label>Password</label>
+                <label>Lösenord</label>
               </div>
-              <a href="#" className="forgot-pass-link">Forgot password?</a>
-              <button type="submit">Log In</button>
+              <a href="#" className="forgot-pass-link">Glömt lösenord?</a>
+              <button type="submit">Logga In</button>
             </form>
             <div className="bottom-link">
-              Don't have an account?
-              <a href="#" id="signup-link">Signup</a>
+              Har inget konto registrerad?
+              <a href="#" id="signup-link">Skapa konto</a>
             </div>
           </div>
         </div>
         <div className="form-box signup">
           <div className="form-details">
-            <h2>Create Account</h2>
-            <p>To become a part of our community, please sign up using your personal information.</p>
+            <h2>Skapa konto</h2>
+            <p>För att bli en del av vår community, vänligen registrera dig med din personliga information.</p>
           </div>
           <div className="form-content">
-            <h2>SIGNUP</h2>
+            <h2>REGISTRERA</h2>
             <form action="#">
               <div className="input-field">
                 <input type="text" required />
-                <label>Enter your email</label>
+                <label>Skriv e-post</label>
               </div>
               <div className="input-field">
                 <input type="password" required />
-                <label>Create password</label>
+                <label>Skriv lösenord</label>
               </div>
               <div className="policy-text">
                 <input type="checkbox" id="policy" />
                 <label for="policy">
-                  I agree the
-                  <a href="#" className="option">Terms & Conditions</a>
+                  Jag godkänner dessa
+                  <a href="#" className="option">Allmänna villkor</a>
                 </label>
               </div>
-              <button type="submit">Sign Up</button>
+              <button type="submit">Skapa konto</button>
             </form>
             <div className="bottom-link">
-              Already have an account?
-              <a href="#" id="login-link">Login</a>
+              Har du redan ett konto?
+              <a href="#" id="login-link">Logga in</a>
             </div>
           </div>
         </div>
